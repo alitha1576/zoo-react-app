@@ -1,25 +1,23 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import DisplayGreeting from "./DisplayGreeting";
+import AnimalProfile from "./AnimalProfile";
+import ButtonsSection from "./ButtonsSection";
 
 function App() {
-  const [count, setCount] = useState<number>(0);
-  console.log(count);
-
-  const  [buttonName, setbuttonName] = useState("Click me");
-
   return (
-    <div>
-   <h1>React + Vite</h1>
-   <p>Hello world {count}</p>
-   <button onClick={()=> 
-  setbuttonName("Don't click me!")
-}>{buttonName}</button>
-   </div>
+<>
+<header><img src="assets/zoo-logo.png" className='logo' alt="" /></header>
+<DisplayGreeting />
+<div className="animalsList"></div>
+<ButtonsSection/>
+<AnimalProfile/>
+<footer>
+  <p>Made for ReDI School</p>
+  <p>Anna Petrova</p>
+</footer>
+</>
   )
 }
-
-
 
 export default App
