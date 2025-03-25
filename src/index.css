@@ -54,6 +54,13 @@ button:hover {
   background-color: #464040;
   color: rgb(206, 201, 201);
 }
+
+button.active {
+  border-color: rgb(35, 33, 33);
+  background-color: #464040;
+  color: rgb(206, 201, 201);
+}
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;

@@ -21,9 +21,9 @@ const AnimalsItems = filteredAnimals.map((animal) => (
     return (
         <>
 <div className="buttonsSection">
-        <button onClick={() => setFilter('all')} id='allAnimals'>All animals</button>
-        <button onClick={() => setFilter('Mammal')} id='mammals'>Mammals</button>
-        <button onClick={() => setFilter('Bird')} id='birds'>Birds</button>
+        <button onClick={() => setFilter('all')} className={filter === "all" ? "active" : ""} id='allAnimals'>All animals</button>
+        <button onClick={() => setFilter('Mammal')} className={filter === "Mammal" ? "active" : ""} id='mammals'>Mammals</button>
+        <button onClick={() => setFilter('Bird')} className={filter === "Bird" ? "active" : ""} id='birds'>Birds</button>
 </div>
      <div className="animalContainer">{AnimalsItems}</div>
      </>
